@@ -1,10 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap");
+
 body {
   background-color: lightgray;
   margin: 0;
 }
 
+.top_slider {
+  position: fixed;
+  background-color: black;
+  height: 55px;
+  width: 100%;
+  top: -55px;
+  transition: all 0.5s;
+}
+
+.slide {
+  transform: translateY(55px);
+}
+
 header {
-  background-color: teal;
   display: flex;
   position: fixed;
   top: 0;
@@ -15,15 +30,22 @@ header {
 }
 
 header p {
-  color: white;
+  color: black;
   font-size: 35px;
+  font-family: "Montserrat Subrayada", sans-serif;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.blacken p {
+  color: white;
 }
 
 table {
   border-collapse: collapse;
   margin: auto;
   margin-top: 60px;
-  background-color: white;
+  background-color: #d9eddf;
 }
 
 td {
@@ -44,7 +66,7 @@ input {
 input:focus {
   background-color: teal;
   border: none;
-  color: white;
+  color: #d9eddf;
 }
 
 .tall {
