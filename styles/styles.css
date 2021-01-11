@@ -1,0 +1,53 @@
+body {
+  background-color: lightgray;
+  margin: 0;
+}
+
+header {
+  background-color: teal;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+}
+
+header p {
+  color: white;
+  font-size: 35px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 60px;
+  background-color: white;
+}
+
+td {
+  border: 5px solid black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+}
+
+input:focus {
+  background-color: teal;
+  border: none;
+  color: white;
+}
+
+.tall {
+  height: 1000px;
+  background-color: lightgray;
+}
