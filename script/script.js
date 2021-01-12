@@ -1,27 +1,12 @@
 
-function solve() {
-    let rows = document.getElementsByTagName('tr')
-    y = -1
-    for (row of rows) {
-        y += 1
-        cells = row.cells
-        x = -1
-        for (cell of cells) {
-            i = 1
-        }
-    }
-    console.log(window.scrollY)
-}
-
-document.addEventListener("scroll", (e) => {
-    if (window.scrollY > 25) {
+document.addEventListener("scroll", () => {
+    if (window.scrollY > 15) {
         window.requestAnimationFrame(() => {
             let header = document.getElementsByTagName('header')[0]
             let black = document.createAttribute('class')
             black.value = "blacken"
             header.setAttributeNode(black)
             let slider = document.getElementById('slider')
-            console.log(slider)
             let slide = document.createAttribute('class')
             slide.value = 'top_slider slide'
             slider.setAttributeNode(slide)
@@ -36,3 +21,18 @@ document.addEventListener("scroll", (e) => {
         })
     }
 })
+
+function solve() {
+    for (row of grid.rows) {
+        for (cell of row.cells) {
+            strip_input(cell)
+        }
+    }
+}
+
+function strip_input(cell) {
+    input = cell.getElementsByTagName('input')[0]
+    if (input) {
+    cell.innerHTML = input.value
+    }
+}

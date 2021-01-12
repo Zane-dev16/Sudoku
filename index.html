@@ -10,6 +10,15 @@
     <header>
         <p>Decypher Sudoku</p>
     </header>
+    <div class="definition">Sudoku solver</div>
+    <div class="guide">use 
+        <button class="guide-button">tab</button> 
+        and 
+        <button class="guide-button">shift</button>
+        +
+        <button class="guide-button">tab</button> 
+        to navigate grid
+    </div> 
     <table id="grid">
         <tr >
             <td><input type="text"></td>
@@ -111,7 +120,7 @@
             <td><input type="text"></td>
         </tr>
     </table>
-    <button onclick='solve()'>Solve!</button>
+    <button onclick='solve()' class="solve">Solve!</button>
     <div class="tall"></div>
     <script src="script/script.js"></script>
 </body>
