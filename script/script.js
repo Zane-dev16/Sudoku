@@ -33,6 +33,6 @@ function solve() {
 function strip_input(cell) {
     input = cell.getElementsByTagName('input')[0]
     if (input) {
-    cell.innerHTML = input.value
+        cell.innerHTML = input.value
     }
 }
